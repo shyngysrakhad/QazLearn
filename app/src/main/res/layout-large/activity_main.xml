@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/app_name"
+                android:id="@+id/textView9"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="100sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/user_name"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:layout_weight="1"
+                    android:textSize="40dp"
+                    android:text="@string/loading"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/welcome"
+                android:id="@+id/textView7"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_expo"
+            android:background="@drawable/ic_user"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp" />
+
+        <Button
+            android:id="@+id/button_lessons"
+            android:background="@drawable/book"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lessons"
+            android:id="@+id/text_lessons"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/button_lessons"
+            android:layout_alignLeft="@+id/button_lessons"
+            android:layout_alignStart="@+id/button_lessons"
+            android:layout_alignRight="@+id/button_lessons"
+            android:layout_alignEnd="@+id/button_lessons" />
+
+        <TextView
+            android:text="@string/translator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:gravity="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_below="@+id/button_translator"
+            android:layout_alignLeft="@+id/button_translator"
+            android:layout_alignStart="@+id/button_translator"
+            android:layout_toStartOf="@+id/button_lessons"
+            android:layout_alignRight="@+id/button_translator"
+            android:layout_alignEnd="@+id/button_translator"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_translator"
+            android:background="@drawable/ic_translation"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp" />
+
+        <TextView
+            android:text="@string/phrases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_below="@+id/button_expo"
+            android:layout_alignLeft="@+id/button_expo"
+            android:layout_alignStart="@+id/button_expo"
+            android:layout_alignRight="@+id/button_expo"
+            android:layout_alignEnd="@+id/button_expo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/button_send"
+            android:background="@drawable/send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/support"
+            android:id="@+id/text_send"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/button_send"
+            android:layout_alignEnd="@+id/button_send"
+            android:layout_alignLeft="@+id/button_send"
+            android:layout_alignStart="@+id/button_send"
+            android:layout_below="@+id/button_send" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/button_achievement"
+            android:background="@drawable/trophy"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/button_settings"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/settings"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/settings"
+            android:id="@+id/text_settings"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/text_achievement"
+            android:layout_alignRight="@+id/button_settings"
+            android:layout_alignEnd="@+id/button_settings"
+            android:layout_alignLeft="@+id/button_settings"
+            android:layout_alignStart="@+id/button_settings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/achievements"
+            android:id="@+id/text_achievement"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/button_achievement"
+            android:layout_alignEnd="@+id/button_achievement"
+            android:layout_alignStart="@+id/button_achievement" />
+
+    </RelativeLayout>
+</LinearLayout>

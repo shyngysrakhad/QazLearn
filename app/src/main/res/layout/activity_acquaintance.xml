@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/dialog1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_below="@+id/progress"
+        android:layout_height="150dp"
+        android:layout_above="@+id/imageView16"
+        android:layout_width="210dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/dialog1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialog2"
+        android:gravity="center"
+        android:layout_below="@+id/progress"
+        android:layout_width="210dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dialog_name"
+        android:layout_below="@+id/imageView16"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_height="140dp"
+        android:layout_marginTop="13dp" />
+
+    <ImageView
+        android:background="@drawable/boy11"
+        android:id="@+id/imageView19"
+        android:layout_above="@+id/dialog_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_height="170dp"
+        android:layout_width="170dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dialog_name">
+
+        <Button
+            android:text="@string/previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="@drawable/check_button"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/progressindialog"
+            android:layout_weight="0.2"
+            android:visibility="gone" />
+
+        <Button
+            android:text="@string/str_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btncheck"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="@drawable/check_button"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:background="@drawable/boy1"
+        android:id="@+id/imageView16"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="170dp"
+        android:layout_height="170dp" />
+
+</RelativeLayout>

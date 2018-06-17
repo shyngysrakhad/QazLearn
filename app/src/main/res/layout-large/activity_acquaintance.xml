@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:id="@+id/mainrelative"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.qazlearn.a1.qazlearn.Methods.Dialog"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/dialog1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_below="@+id/progress"
+        android:layout_height="220dp"
+        android:layout_above="@+id/textView16"
+        android:layout_alignBottom="@+id/dialog2"
+        android:textSize="25sp"
+        android:layout_width="350dp"
+        android:layout_marginLeft="150dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialog2"
+        android:gravity="center"
+        android:layout_height="220dp"
+        android:layout_above="@+id/imageView19"
+        android:layout_below="@+id/progress"
+        android:textSize="25sp"
+        android:layout_width="400dp"
+        android:layout_marginRight="130dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
+
+    <ImageView
+        android:background="@drawable/boy11"
+        android:id="@+id/imageView19"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="300dp"
+        android:layout_width="300dp" />
+
+    <ImageView
+        android:background="@drawable/boy1"
+        android:id="@+id/imageView16"
+        android:layout_below="@+id/dialog1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="300dp"
+        android:layout_width="300dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/check_button"
+            android:text="@string/previous"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:textSize="30dp"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/progressindialog"
+            android:layout_weight="0.2"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btncheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/check_button"
+            android:text="@string/str_next"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:textSize="30dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Танысу\nЗнакомство"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_name"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>

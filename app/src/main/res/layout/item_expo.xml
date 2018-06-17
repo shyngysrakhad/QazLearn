@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expokazakh"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exporussian"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:layout_below="@+id/expokazakh"
+        android:layout_alignStart="@+id/expokazakh"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:text="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expoenglish"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/exporussian"
+        android:layout_alignStart="@+id/exporussian"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "973775324486",
+    "firebase_url": "https://qazlearn-aab71.firebaseio.com",
+    "project_id": "qazlearn-aab71",
+    "storage_bucket": "qazlearn-aab71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973775324486:android:e79ff1bbe27e5535",
+        "android_client_info": {
+          "package_name": "com.qazlearn.a1.qazlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973775324486-1coa4fmkf29q6vthftveer9edtvjan17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qazlearn.a1.qazlearn",
+            "certificate_hash": "251F0D10640B6597B04A083A2F7430A8FF7518C1"
+          }
+        },
+        {
+          "client_id": "973775324486-m24d7b7mgrbh7q8jvf7gt81e795sc2fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKqH_ySpaIHRzw4nvjNGu2kBv7PMH18j0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973775324486-m24d7b7mgrbh7q8jvf7gt81e795sc2fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

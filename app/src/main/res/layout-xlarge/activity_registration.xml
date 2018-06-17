@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kazlingo.a1.kazlingo.Registration"
+    android:background="@drawable/achievmentdesign">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/appname"
+        android:fontFamily="serif"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="120sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/imageView12"
+        android:layout_above="@+id/linearLayout2"
+        android:background="#795548"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_marginTop="-20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appname"
+        android:layout_alignBottom="@+id/imageView12"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/imageView13"
+            android:background="@drawable/lesson"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/imageView14"
+            android:background="@drawable/books"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/imageView15"
+            android:background="@drawable/books2"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="150dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/imageView17"
+            android:background="@drawable/books4"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/username"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/edit_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="35sp"
+            android:elevation="1dp" />
+        <EditText
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_name"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textIsSelectable="false"
+            android:editable="false"
+            android:textSize="35sp"
+            android:elevation="1dp" />
+
+
+        <TextView
+            android:text="@string/thisnameexists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/existing"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="E-mail "
+            android:id="@+id/textView13"
+            android:textSize="35sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="1dp" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmailRegistration"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="35sp"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView32"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="35sp"
+            android:elevation="1dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtPasswordRegistration"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="35sp"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="@string/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView42"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="35sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryspinner"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scrollbarSize="30dp" />
+
+        <TextView
+            android:text="@string/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView43"
+            android:textSize="35sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/agespinner"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:id="@+id/registration"
+            android:layout_below="@+id/edit_surname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:imeOptions="actionGo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/haveanaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView34"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="25sp" />
+
+            <Button
+                android:text="@string/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tologin"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

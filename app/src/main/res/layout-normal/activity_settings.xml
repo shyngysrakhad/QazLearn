@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achievmentdesign">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imageView20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="false"
+        android:layout_centerInParent="true"
+        android:src="@drawable/profile"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="400dp">
+
+        <TextView
+            android:text="@string/nameing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView23"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textCapWords|textPersonName"
+            android:ems="10"
+            android:id="@+id/nameofuser"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.2" />
+
+        <TextView
+            android:text="@string/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView44"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textCapWords|textPersonName"
+            android:ems="10"
+            android:id="@+id/lastname"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.2" />
+
+        <Button
+            android:text="@string/change"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/buttonchange"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.3" />
+
+        <TextView
+            android:text="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:layout_weight="1.2" />
+
+        <TextView
+            android:text="@string/confirmthepassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView20"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:layout_weight="1.2" />
+
+        <Button
+            android:text="@string/update"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:layout_weight="1.3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/signout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button3"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/deleteaccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button4"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/emailconfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/confirm" />
+    </LinearLayout>
+
+</LinearLayout>

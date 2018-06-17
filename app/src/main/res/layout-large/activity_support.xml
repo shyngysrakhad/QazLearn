@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Support"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_light">
+
+        <TextView
+            android:onClick="Contactus"
+            android:text="@string/contactthedevelopers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvcontacthedev"
+            android:layout_weight="2"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:onClick="Contactus"
+            android:layout_width="0dp"
+            android:layout_height="181dp"
+            android:background="@drawable/service"
+            android:id="@+id/imcontacthedev"
+            android:layout_weight="0.99"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="173dp"
+            android:background="@drawable/star"
+            android:id="@+id/imratetheapp"
+            android:layout_weight="0.98"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="@string/rateanapp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvratetheapp"
+            android:layout_weight="2"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/light_blue">
+        <TextView
+            android:text="@string/sharetheapp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tvsharetheapp"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:background="@drawable/share"
+            android:id="@+id/imsharetheapp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.99" />
+    </LinearLayout>
+</LinearLayout>

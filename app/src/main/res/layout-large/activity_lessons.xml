@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#B3E5FC">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <Button
+            android:text="Ә"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/dayword" />
+
+        <TextView
+            android:text="Ана \nmother"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayword"
+            android:background="@drawable/note"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Ғ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/letter7" />
+
+        <Button
+            android:text="Қ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter3"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/letter2" />
+
+        <Button
+            android:text="Ң"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter4"
+            android:layout_below="@+id/letter1"
+            android:layout_toEndOf="@+id/dayword" />
+
+        <Button
+            android:text="Ө"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter5"
+            android:layout_below="@+id/letter2"
+            android:layout_toEndOf="@+id/letter1" />
+
+        <Button
+            android:text="Ұ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter6"
+            android:layout_alignBaseline="@+id/letter5"
+            android:layout_alignBottom="@+id/letter5"
+            android:layout_toEndOf="@+id/letter2" />
+
+        <Button
+            android:text="Ү"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter7"
+            android:layout_below="@+id/letter4"
+            android:layout_toEndOf="@+id/dayword" />
+
+        <Button
+            android:text="Һ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter8"
+            android:layout_alignBaseline="@+id/letter7"
+            android:layout_alignBottom="@+id/letter7"
+            android:layout_toEndOf="@+id/letter7" />
+
+        <Button
+            android:text="І"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/letter9"
+            android:layout_alignBaseline="@+id/letter8"
+            android:layout_alignBottom="@+id/letter8"
+            android:layout_toEndOf="@+id/letter5" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/txtlesson1"
+                    android:layout_below="@+id/lesson_family"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/acquaintance"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/lesson_family"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/handshake"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:id="@+id/lesson_family_test"
+                    android:background="@drawable/ic_exam"
+                    android:layout_above="@+id/txtlesson1"
+                    android:layout_alignRight="@+id/lesson_family"
+                    android:layout_alignEnd="@+id/lesson_family"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/lesson_dwelling"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/wheredoyoulive"
+                    android:id="@+id/txtlesson2"
+                    android:layout_below="@+id/lesson_dwelling"
+                    android:layout_alignRight="@+id/lesson_dwelling"
+                    android:layout_alignEnd="@+id/lesson_dwelling"
+                    android:layout_alignLeft="@+id/lesson_dwelling"
+                    android:layout_alignStart="@+id/lesson_dwelling"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/character"
+                    android:id="@+id/txtlesson3"
+                    android:layout_alignTop="@+id/txtlesson2"
+                    android:layout_alignLeft="@+id/lesson_character"
+                    android:layout_alignStart="@+id/lesson_character"
+                    android:layout_alignRight="@+id/lesson_character"
+                    android:layout_alignEnd="@+id/lesson_character"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/lesson_dwelling_test"
+                    android:background="@drawable/ic_exam"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@+id/txtlesson3"
+                    android:layout_alignEnd="@+id/lesson_dwelling" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/lesson_character"
+                    android:background="@drawable/ic_care"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp" />
+
+                <Button
+                    android:id="@+id/lesson_character_test"
+                    android:background="@drawable/ic_exam"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@+id/txtlesson3"
+                    android:layout_alignEnd="@+id/lesson_character" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/lesson_food"
+                    android:background="@drawable/icon_food"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/food"
+                    android:id="@+id/txtlesson4"
+                    android:gravity="center"
+                    android:layout_below="@+id/lesson_food"
+                    android:layout_alignLeft="@+id/lesson_food"
+                    android:layout_alignStart="@+id/lesson_food"
+                    android:layout_alignRight="@+id/lesson_food"
+                    android:layout_alignEnd="@+id/lesson_food"
+                    android:layout_marginTop="20dp" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/lesson_shop"
+                    android:background="@drawable/ic_shop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/shop"
+                    android:id="@+id/txtlesson5"
+                    android:gravity="center"
+                    android:layout_alignTop="@+id/txtlesson4"
+                    android:layout_alignLeft="@+id/lesson_shop"
+                    android:layout_alignStart="@+id/lesson_shop"
+                    android:layout_alignRight="@+id/lesson_shop"
+                    android:layout_alignEnd="@+id/lesson_shop" />
+
+                <Button
+                    android:id="@+id/lesson_food_test"
+                    android:background="@drawable/ic_exam"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@+id/txtlesson5"
+                    android:layout_alignEnd="@+id/lesson_food" />
+
+                <Button
+                    android:id="@+id/lesson_shop_test"
+                    android:background="@drawable/ic_exam"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@+id/txtlesson5"
+                    android:layout_alignEnd="@+id/lesson_shop" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
