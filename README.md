@@ -1,0 +1,2 @@
+# QazLearn
+Currently, there are a lot of programs that teach English, Russian and other common languages. At the moment, applications and programs for teaching the Kazakh language are not enough. Therefore, the creation of this application for teaching the Kazakh language is relevant. The application will also be useful in the forthcoming grandiose event "EXPO 2017", in which many ignorant Kazakh will come.
